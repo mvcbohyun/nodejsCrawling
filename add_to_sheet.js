@@ -10,7 +10,7 @@ function range_add_cell(range, cell) {
   if (rng.e.c < c.c) rng.e.c = c.c;
   return xlsx.utils.encode_range(rng);
 }
-// 영화목록 , (A,B)
+// 영화목록 , (A1,B2), 's' --문자열 , 'n' --숫자, 들어갈 데이터  
 module.exports = function add_to_sheet(sheet, cell, type, raw) {
   sheet['!ref'] = range_add_cell(sheet['!ref'], cell);
   sheet[cell] = { t: type, v: raw };

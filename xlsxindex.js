@@ -42,6 +42,7 @@ const crawler = async ()=>{
     // 순서 상관없이 한번에 요청해서 가져옴  순서가 변경될수 있음 !
     // await Promise.all(records.map( async(r) =>{
        
+    //userAgent -- 크롬 엣지 이런거 
     // }))
 };
 crawler();
